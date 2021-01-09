@@ -12,11 +12,12 @@ export const Container = styled.div`
   h1 {
     font-size: 54px;
     color: ${props => props.theme.colors.primary};
-    margin: 40px;
+    margin: 32px;
   }
   p {
-    margin-top: 24px;
-    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    font-size: 28px;
     line-height: 32px;
   }
 `
