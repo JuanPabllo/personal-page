@@ -1,10 +1,5 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-`
-
 export const DivButton = styled.div`
   width: 320px;
   height: 150px;

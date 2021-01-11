@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import { Container, Imagem } from '../styles/pages/Home'
+import { Container, Imagem, ContainerButtom } from '../styles/pages/Home'
 import DivButton from '../components/Button'
 
 const Home: React.FC = () => {
@@ -20,9 +20,11 @@ const Home: React.FC = () => {
         Estudante de ciência da computação. focado no desenvolvimento de
         front-end. Apaixonado por fazer coisas!
       </p>
-      <DivButton text="Face" params="Só avo" />
-      <DivButton text="Twitter" params="Falo umas merdas aqui!" />
-      <DivButton text="Insta" params="posto foto" />
+      <ContainerButtom>
+        <DivButton text="Face" params="Só avo" />
+        <DivButton text="Twitter" params="Falo umas merdas aqui!" />
+        <DivButton text="Insta" params="posto foto" />
+      </ContainerButtom>
     </Container>
   )
 }

@@ -29,6 +29,10 @@ export const Container = styled.div`
 export const Imagem = styled.img`
   border-radius: 50%;
 
-  margin-top: 200px;
+  margin-top: 60px;
   width: 200px;
+`
+export const ContainerButtom = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `
