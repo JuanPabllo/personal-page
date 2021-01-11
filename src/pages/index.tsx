@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
-import { Container } from '../styles/pages/Home'
-import Logo from '../assets/welcome.svg'
+import { Container, Imagem } from '../styles/pages/Home'
+import DivButton from '../components/Button'
 
 const Home: React.FC = () => {
   return (
@@ -11,9 +11,18 @@ const Home: React.FC = () => {
         <title>Juan Pablo</title>
       </Head>
 
-      <Logo />
-      <h1>Em breve novidades!</h1>
-      <p>Site pessoal feito por Juan Pablo.</p>
+      <Imagem
+        src="https://avatars3.githubusercontent.com/u/59495901?v=4"
+        alt="Juan Pablo"
+      />
+      <h1>Juan Pablo</h1>
+      <p>
+        Estudante de ciência da computação. focado no desenvolvimento de
+        front-end. Apaixonado por fazer coisas!
+      </p>
+      <DivButton text="Face" params="Só avo" />
+      <DivButton text="Twitter" params="Falo umas merdas aqui!" />
+      <DivButton text="Insta" params="posto foto" />
     </Container>
   )
 }

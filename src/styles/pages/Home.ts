@@ -10,14 +10,25 @@ export const Container = styled.div`
   flex-direction: column;
 
   h1 {
-    font-size: 54px;
+    font-size: 3.5rem;
     color: ${props => props.theme.colors.primary};
-    margin: 32px;
+    margin-top: 18px;
+    margin: 8px;
+
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bold;
   }
   p {
-    margin-top: 16px;
     margin-bottom: 18px;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 1.3rem;
+    line-height: 1.5;
   }
+`
+
+export const Imagem = styled.img`
+  border-radius: 50%;
+
+  margin-top: 200px;
+  width: 200px;
 `
