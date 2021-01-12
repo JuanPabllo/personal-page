@@ -9,6 +9,8 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
+  overflow-x: hidden;
+
   h1 {
     font-size: 3.5rem;
     color: ${props => props.theme.colors.primary};
