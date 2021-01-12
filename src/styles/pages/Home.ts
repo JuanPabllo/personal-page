@@ -29,7 +29,7 @@ export const Container = styled.div`
 export const Imagem = styled.img`
   border-radius: 50%;
 
-  margin-top: 60px;
+  margin-top: 280px;
   width: 200px;
 `
 export const ContainerButtom = styled.div`

@@ -1,18 +1,22 @@
 import React from 'react'
+import Link from 'next/link'
 
 import { DivButton } from '../styles/pages/Button'
 
 interface content {
   text: string
   params: string
+  link?: string
 }
 
-const Button: React.FC<content> = ({ text, params }) => {
+const Button: React.FC<content> = ({ text, params, link = '/' }) => {
   return (
-    <DivButton>
-      <h1>{text}</h1>
-      <p>{params}</p>
-    </DivButton>
+    <Link href={link}>
+      <DivButton>
+        <h3>{text}</h3>
+        <p>{params}</p>
+      </DivButton>
+    </Link>
   )
 }
 

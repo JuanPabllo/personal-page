@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import { Container, Imagem, ContainerButtom } from '../styles/pages/Home'
 import DivButton from '../components/Button'
@@ -21,9 +22,30 @@ const Home: React.FC = () => {
         front-end. Apaixonado por fazer coisas!
       </p>
       <ContainerButtom>
-        <DivButton text="Face" params="Só avo" />
-        <DivButton text="Twitter" params="Falo umas merdas aqui!" />
-        <DivButton text="Insta" params="posto foto" />
+        <Link href="/about">
+          <DivButton text="Sobre mim" params="Descubra um pouco sobre mim." />
+        </Link>
+
+        <DivButton
+          text="GitHub"
+          params="Veja todos os meus projetos pessoais."
+        />
+        <DivButton
+          text="Artigos"
+          params="Veja artigos de tecnologia que publiquei no Dev to."
+        />
+        <DivButton
+          text="Instagram"
+          params="Local onde você pode acompanhar meu dia a dia."
+        />
+        <DivButton
+          text="Twitter"
+          params="Aqui posto sobre tecnologia, mas nem sempre."
+        />
+        <DivButton
+          text="Recomendações"
+          params="Algumas dicas, algumas não úteis."
+        />
       </ContainerButtom>
     </Container>
   )
