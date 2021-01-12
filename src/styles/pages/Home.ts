@@ -9,7 +9,7 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
   h1 {
     font-size: 3.5rem;
