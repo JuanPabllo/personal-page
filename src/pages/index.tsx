@@ -1,6 +1,5 @@
 import React from 'react'
-import Head from 'next/head'
-import Link from 'next/link'
+import Header from '../components/Header'
 
 import { Container, Imagem, ContainerButtom } from '../styles/pages/Home'
 import DivButton from '../components/Button'
@@ -8,9 +7,7 @@ import DivButton from '../components/Button'
 const Home: React.FC = () => {
   return (
     <Container>
-      <Head>
-        <title>Juan Pablo</title>
-      </Head>
+      <Header />
 
       <Imagem
         src="https://avatars3.githubusercontent.com/u/59495901?v=4"
@@ -22,29 +19,35 @@ const Home: React.FC = () => {
         front-end. Apaixonado por fazer coisas!
       </p>
       <ContainerButtom>
-        <Link href="/about">
-          <DivButton text="Sobre mim" params="Descubra um pouco sobre mim." />
-        </Link>
-
+        <DivButton
+          text="Sobre mim"
+          params="Descubra um pouco sobre mim."
+          link="/error"
+        />
         <DivButton
           text="GitHub"
           params="Veja todos os meus projetos pessoais."
+          link="https://github.com/JuanPabllo"
         />
         <DivButton
           text="Artigos"
           params="Veja artigos de tecnologia que publiquei no Dev to."
+          link="https://dev.to/juanpabllo"
         />
         <DivButton
           text="Instagram"
           params="Local onde você pode acompanhar meu dia a dia."
+          link="https://www.instagram.com/juan_pablloreal/"
         />
         <DivButton
           text="Twitter"
           params="Aqui posto sobre tecnologia, mas nem sempre."
+          link="https://twitter.com/Juan_Pabl00o"
         />
         <DivButton
           text="Recomendações"
           params="Algumas dicas, algumas não úteis."
+          link="/error"
         />
       </ContainerButtom>
     </Container>

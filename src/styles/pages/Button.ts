@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const DivButton = styled.div`
+export const DivButton = styled.button`
   width: 320px;
   height: 150px;
 

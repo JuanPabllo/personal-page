@@ -11,7 +11,7 @@ interface content {
 
 const Button: React.FC<content> = ({ text, params, link = '/' }) => {
   return (
-    <Link href={link}>
+    <Link href={link} scroll={false}>
       <DivButton>
         <h3>{text}</h3>
         <p>{params}</p>
