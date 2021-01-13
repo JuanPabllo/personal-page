@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         <DivButton
           text="Sobre mim"
           params="Descubra um pouco sobre mim."
-          link="/404"
+          link="/about"
         />
         <DivButton
           text="GitHub"

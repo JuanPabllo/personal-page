@@ -20,6 +20,8 @@ export const DivButton = styled.button`
     font-weight: bold;
     margin-left: 8px;
     margin-bottom: 10px;
+
+    color: ${props => props.theme.colors.primary};
   }
   p {
     font-size: 1.25rem;
