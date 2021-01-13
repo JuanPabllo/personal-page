@@ -22,7 +22,7 @@ const Home: React.FC = () => {
         <DivButton
           text="Sobre mim"
           params="Descubra um pouco sobre mim."
-          link="/error"
+          link="/404"
         />
         <DivButton
           text="GitHub"
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
         <DivButton
           text="Recomendações"
           params="Algumas dicas, algumas não úteis."
-          link="/error"
+          link="/404"
         />
       </ContainerButtom>
     </Container>
