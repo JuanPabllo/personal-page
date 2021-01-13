@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         />
         <DivButton
           text="Artigos"
-          params="Veja artigos de tecnologia que publiquei no Dev to."
+          params="Artigos sobre tecnologia que publiquei no Dev to."
           link="https://dev.to/juanpabllo"
         />
         <DivButton
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
         />
         <DivButton
           text="Recomendações"
-          params="Algumas dicas, algumas não úteis."
+          params="Algumas indicações, muitas não úteis."
           link="/404"
         />
       </ContainerButtom>
