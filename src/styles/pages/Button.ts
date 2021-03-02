@@ -12,7 +12,7 @@ export const DivButton = styled.button`
   cursor: pointer;
   transition: 0.2s;
 
-  background: ${props => props.theme.colors.background};
+  background: ${props => props.theme.colors.text};
   box-shadow: 8px #333333;
 
   h3 {
