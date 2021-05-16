@@ -21,7 +21,7 @@ export const Container = styled.div`
     font-weight: bold;
   }
   p {
-    margin-bottom: 18px;
+    margin: 18px 0;
     font-size: 1.3rem;
     line-height: 1.5;
   }
@@ -30,8 +30,8 @@ export const Container = styled.div`
 export const Imagem = styled.img`
   border-radius: 50%;
 
-  margin-top: 280px;
-  width: 200px;
+  margin-top: 250px;
+  width: 180px;
 `
 export const ContainerButtom = styled.div`
   display: grid;

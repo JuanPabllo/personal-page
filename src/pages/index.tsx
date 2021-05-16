@@ -13,11 +13,11 @@ const Home: React.FC = () => {
         src="https://avatars3.githubusercontent.com/u/59495901?v=4"
         alt="Juan Pablo"
       />
-      <h1>Juan Pablo</h1>
       <p>
-        Estudante de ciência da computação. focado no desenvolvimento de
-        front-end. Apaixonado por fazer coisas!
+        Meu nome é Juan Pablo, sou um desenvolvedor Front-end e um amante de
+        open source
       </p>
+
       <ContainerButtom>
         <DivButton
           text="Sobre mim"
