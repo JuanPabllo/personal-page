@@ -30,11 +30,11 @@ const Home: React.FC = () => {
           link="https://github.com/JuanPabllo"
         />
         <CardPrincipal
-          text="Artigos"
-          params="Veja artigos de tecnologia que publiquei no Dev to."
-          link="https://dev.to/juanpabllo"
+          text="Blog"
+          params="Veja artigos de tecnologia que publiquei no Dev.to"
+          link="/blog"
         />
-        <CardPrincipal
+        {/* <CardPrincipal
           text="Instagram"
           params="Local onde você pode acompanhar meu dia a dia."
           link="https://www.instagram.com/juan_pablloreal/"
@@ -48,7 +48,7 @@ const Home: React.FC = () => {
           text="Recomendações"
           params="Algumas dicas, algumas não úteis."
           link="/404"
-        />
+        /> */}
       </ContainerButtom>
     </Container>
   )
