@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { DivButton } from '../styles/pages/Button'
+import { DivButton } from './styles'
 
 interface content {
   text: string

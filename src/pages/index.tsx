@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 
 import { Container, Imagem, ContainerButtom } from '../styles/pages/Home'
-import DivButton from '../components/Button'
+import CardPrincipal from '../components/CardPrincipal'
 
 const Home: React.FC = () => {
   return (
@@ -19,32 +19,32 @@ const Home: React.FC = () => {
       </p>
 
       <ContainerButtom>
-        <DivButton
+        <CardPrincipal
           text="Sobre mim"
           params="Descubra um pouco sobre mim."
           link="/404"
         />
-        <DivButton
+        <CardPrincipal
           text="GitHub"
           params="Veja todos os meus projetos pessoais."
           link="https://github.com/JuanPabllo"
         />
-        <DivButton
+        <CardPrincipal
           text="Artigos"
           params="Veja artigos de tecnologia que publiquei no Dev to."
           link="https://dev.to/juanpabllo"
         />
-        <DivButton
+        <CardPrincipal
           text="Instagram"
           params="Local onde você pode acompanhar meu dia a dia."
           link="https://www.instagram.com/juan_pablloreal/"
         />
-        <DivButton
+        <CardPrincipal
           text="Twitter"
           params="Aqui posto sobre tecnologia, mas nem sempre."
           link="https://twitter.com/Juan_Pabl00o"
         />
-        <DivButton
+        <CardPrincipal
           text="Recomendações"
           params="Algumas dicas, algumas não úteis."
           link="/404"
