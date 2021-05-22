@@ -1,39 +1,41 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  overflow-x: hidden !important;
+  padding: 0px 100px;
 
   h1 {
-    font-size: 3.5rem;
-    color: ${props => props.theme.colors.primary};
-    margin-top: 18px;
-    margin: 8px;
-
-    line-height: 1.5;
-    font-weight: bold;
+    margin: 0px 0px 30px 4px;
+    color: #64ffda;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 8px 0px 10px 4px;
+    line-height: 17.6px;
   }
+
+  h2 {
+    font-weight: 600;
+    font-size: 80px;
+    color: #ccd6f6;
+    line-height: 88px;
+  }
+
+  h3 {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 80px;
+    color: #8892b0;
+    line-height: 72px;
+  }
+
   p {
-    margin: 18px 0;
-    font-size: 1.3rem;
-    line-height: 1.5;
+    margin-top: 15px;
+    margin: 20px 0px 0px;
+    max-width: 500px;
+    font-size: 20px;
+    color: #8892b0;
+    line-height: 26px;
   }
-`
-
-export const Imagem = styled.img`
-  border-radius: 50%;
-
-  margin-top: 250px;
-  width: 180px;
-`
-export const ContainerButtom = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 `

@@ -1,56 +1,38 @@
 import React from 'react'
-import Header from '../components/Header'
 
-import { Container, Imagem, ContainerButtom } from '../styles/pages/Home'
+import * as s from '../styles/pages/Home'
 import CardPrincipal from '../components/CardPrincipal'
+import HeaderMenu from '../components/HeaderMenu'
 
 const Home: React.FC = () => {
   return (
-    <Container>
-      <Header />
+    <s.Container>
+      <HeaderMenu />
 
-      <Imagem
-        src="https://avatars3.githubusercontent.com/u/59495901?v=4"
-        alt="Juan Pablo"
-      />
+      <h1>Olá, meu nome é</h1>
+      <h2>Juan Pablo</h2>
+      <h3>Eu construo coisas para a web.</h3>
       <p>
-        Meu nome é Juan Pablo, sou um desenvolvedor Front-end e um amante de
-        open source
+        Sou um desenvolvedor Front-end autodidata, focado em React.JS e amante
+        de open source.
       </p>
 
-      <ContainerButtom>
-        <CardPrincipal
-          text="Sobre mim"
-          params="Descubra um pouco sobre mim."
-          link="/404"
-        />
-        <CardPrincipal
-          text="GitHub"
-          params="Veja todos os meus projetos pessoais."
-          link="https://github.com/JuanPabllo"
-        />
-        <CardPrincipal
-          text="Blog"
-          params="Veja artigos de tecnologia que publiquei no Dev.to"
-          link="/blog"
-        />
-        {/* <CardPrincipal
-          text="Instagram"
-          params="Local onde você pode acompanhar meu dia a dia."
-          link="https://www.instagram.com/juan_pablloreal/"
-        />
-        <CardPrincipal
-          text="Twitter"
-          params="Aqui posto sobre tecnologia, mas nem sempre."
-          link="https://twitter.com/Juan_Pabl00o"
-        />
-        <CardPrincipal
-          text="Recomendações"
-          params="Algumas dicas, algumas não úteis."
-          link="/404"
-        /> */}
-      </ContainerButtom>
-    </Container>
+      {/* <CardPrincipal
+        text="Sobre mim"
+        params="Descubra um pouco sobre mim."
+        link="/404"
+      />
+      <CardPrincipal
+        text="GitHub"
+        params="Veja todos os meus projetos pessoais."
+        link="https://github.com/JuanPabllo"
+      />
+      <CardPrincipal
+        text="Blog"
+        params="Veja artigos de tecnologia que publiquei no Dev.to"
+        link="/blog"
+      /> */}
+    </s.Container>
   )
 }
 
