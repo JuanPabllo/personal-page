@@ -5,6 +5,7 @@ import CardPrincipal from '../components/CardPrincipal'
 import HeaderMenu from '../components/HeaderMenu'
 
 const Home: React.FC = () => {
+  console.log('Hey Hacker!🔥')
   return (
     <s.Container>
       <HeaderMenu />
