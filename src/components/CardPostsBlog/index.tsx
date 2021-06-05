@@ -1,28 +1,25 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import * as s from './styles'
 
 export default function CardPostBlog() {
   const [post, setPost] = useState([])
 
-  const handleCallDatas = async () => {
-    try {
-      const response = await axios.get(
-        'https://dev.to/api/articles?username=juanpabllo'
-      )
-      setPost(response.data)
-    } catch (err) {
-      console.log(err)
-    }
+  const fetchDatas = async () => {
+    const response = await axios.get(
+      'https://dev.to/api/articles?username=juanpabllo'
+    )
+    const data = await response.data
+    setPost(data)
   }
 
   useEffect(() => {
-    handleCallDatas()
+    fetchDatas()
   }, [])
 
   return (
     <>
-      {post.map(item => {
+      {post?.map(item => {
         return (
           <s.Card
             key={item.id}

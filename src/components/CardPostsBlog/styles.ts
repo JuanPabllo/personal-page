@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Card = styled.a`
   text-decoration: none;
-  color: #2d3748;
+  color: #edf2f7;
 `
 
 export const Container = styled.div`
@@ -19,11 +19,13 @@ export const Container = styled.div`
   transition: color 0.1s ease 0s, background-color 0.1s ease 0s,
     box-shadow 0.3s ease 0s;
   border-radius: 15px;
-  transition: 0.8s;
+  transition: 0.7s;
   cursor: pointer;
 
   :hover {
-    background: #f5f5f5;
+    transform: translateY(-5px) translateZ(0px);
+    color: #171923;
+    background: #e2e8f0;
   }
 `
 
