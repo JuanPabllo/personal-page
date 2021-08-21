@@ -24,8 +24,8 @@ export const Container = styled.div`
 
   :hover {
     transform: translateY(-5px) translateZ(0px);
-    color: #171923;
-    background: #e2e8f0;
+    /* color: #171923; */
+    /* background: #c6c6c6; */
   }
 `
 

@@ -12,8 +12,9 @@ export const Container = styled.header`
 export const Imagem = styled.img`
   cursor: pointer;
   border-radius: 100%;
-
-  width: 6%;
+  width: 100%;
+  max-width: 75px;
+  margin-right: 12px;
 `
 
 export const ContainerMenu = styled.div`
