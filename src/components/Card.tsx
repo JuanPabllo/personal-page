@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import { FaGithub } from 'react-icons/fa';
-import { FaDev } from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { FaRegEnvelope } from 'react-icons/fa';
+import { FaGithub } from "react-icons/fa";
+import { FaDev } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaRegEnvelope } from "react-icons/fa";
 
 function Card() {
   return (
@@ -34,7 +34,7 @@ function Card() {
             </a>
             <a
               target="_blank"
-              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-pink-600 hover:bg-pink-600 rounded-full hover:text-white transition-colors duration-300"
+              className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-300 hover:bg-gray-300 rounded-full hover:text-white transition-colors duration-300"
               href="https://dev.to/juanpabllo"
             >
               <FaDev color="#000000" />
