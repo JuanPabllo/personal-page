@@ -1,17 +1,9 @@
-import React from 'react'
-import { AppProps } from 'next/app'
-import { ThemeProvider } from 'styled-components'
+import 'tailwindcss/tailwind.css';
+import '../assets/main.css';
+import '../assets/tailwind.css';
 
-import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
-
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-      <GlobalStyle />
-    </ThemeProvider>
-  )
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
