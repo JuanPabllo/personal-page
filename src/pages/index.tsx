@@ -1,40 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import About from '../components/About';
+import Card from '../components/Card';
+import Footer from '../components/Footer';
+import Skills from '../components/Skills';
 
-import * as s from '../styles/pages/Home'
-import CardPrincipal from '../components/CardPrincipal'
-import HeaderMenu from '../components/HeaderMenu'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Home: React.FC = () => {
-  console.log('Hey Hacker!🔥')
+function Home() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  });
+
   return (
-    <s.Container>
-      <HeaderMenu />
-
-      <h1>Olá, meu nome é</h1>
-      <h2>Juan Pablo</h2>
-      <h3>Eu construo coisas para a web.</h3>
-      <p>
-        Sou um desenvolvedor Front-end autodidata, focado em React.JS e amante
-        de open source.
-      </p>
-
-      {/* <CardPrincipal
-        text="Sobre mim"
-        params="Descubra um pouco sobre mim."
-        link="/404"
-      />
-      <CardPrincipal
-        text="GitHub"
-        params="Veja todos os meus projetos pessoais."
-        link="https://github.com/JuanPabllo"
-      />
-      <CardPrincipal
-        text="Blog"
-        params="Veja artigos de tecnologia que publiquei no Dev.to"
-        link="/blog"
-      /> */}
-    </s.Container>
-  )
+    <div className="min-h-screen py-10 px-3 sm:px-5 bg-gray-100">
+      <div data-aos="fade-down" data-aos-duration="800">
+        <Card />
+      </div>
+      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <About />
+        <Skills />
+        <Footer />
+      </div>
+    </div>
+  );
 }
-
-export default Home
+export default Home;
